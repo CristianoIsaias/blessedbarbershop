@@ -1,0 +1,753 @@
+*{margin:0; padding:0;}
+
+body{
+    
+  background-image: url(../img/justo.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ou outro valor desejado */
+  background-position: center; /* Ou outra posição */
+  background-color: #000; /* Cor de fundo */
+  width: 100vw;
+  height: 100vh;
+   display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/* Css do login */
+
+.container-login { 
+    
+    box-shadow: 0px 0px 10px rgba(201, 199, 199, 0.3);
+    background-color: #0c0c0ca6;
+    width: 600px;
+    height: 350px;   
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    border-radius: 8px; 
+}
+form{
+    display: flex;
+    text-align: center;
+    margin: 20px 0 40px 0;
+    flex-direction: column;
+    width: 600px;
+    height: 495px;
+   padding: 120px; 
+   
+}
+form header{
+     text-align: center;
+    margin: 100px 0px 40px 0;
+    font-size: 40px;
+    font-style: ;
+    color: #fff;
+}
+
+form header header{
+    font-size: 75px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 900;
+    font-variant: calc(2.0fr);  
+    margin: 20px;  
+    
+}
+
+#lognome{
+    width: 344px;
+    height: 42px;
+    margin: 1px;
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+   /* margin-top: -5px;  */
+   margin-bottom: 10;
+}
+#logsenha{
+    width: 344px;
+    height: 42px;
+    margin: 1px;
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+   margin-bottom: 10;
+}
+label{
+    font-size: 20px;
+}
+
+#submit{
+    width: 352px;
+    height: 45px;
+    margin-left: 5px;    
+    color: rgb(42, 40, 40);
+    font-size: 30px;
+    background-color: #D8A85E;   
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3px;
+}
+p{
+    text-align: left;
+    padding-left: 85px;
+    padding-top: 10px;
+    
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(116, 111, 111);
+    
+    margin: 1px;
+    
+}
+
+/* Css do formulario de cadastro */
+#container-cadastro{
+    width: 700px;
+    height: 500px;    
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+}
+#cad{
+    
+    text-align: center;
+    padding: 150;
+    padding: 60px;
+    
+}
+
+
+#cadnome {
+    width: 401px;
+    height: 42px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-left:80px;
+    margin-top: 105px;
+}
+
+#cadEmail {
+    width: 401px;
+    height: 42px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-left:80px;
+    margin-top: 15px;
+}
+#cadsenha {
+    width: 401px;
+    height: 42px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+   margin-left:80px;
+    margin-top: 15px;
+}
+#cadtelefone {
+    width: 401px;
+    height: 42px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-left:80px;
+    margin-top: 15px;
+}
+
+#btncad{
+    width: 418px;
+    height: 40px;
+    margin-left: 0px;
+    
+    
+}
+h5{
+    font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top:-50px;
+}
+#selectPages{
+    margin-top:32px;
+}
+label{
+    font-size: 25px;
+    /* text-transform: capitalize; */
+    margin-top: -20px;
+    
+}
+/* Estilo de texto para o calendário */
+.fullCalendar{
+    min-height: 100vh;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 200px;
+}
+.calendar{
+    width: 360px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(223, 222, 222); 
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 200px; 
+    bottom: 190px;    
+    right: 1040px;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-transform:uppercase;
+    text-decoration:solid;
+    
+}
+.monthYear{
+    text-align: center;
+    font-weight: 900;
+    width: 260px;
+    font-size: 17px;
+    font-family: "Cinzel Decorative", serif;
+    color: #484848;
+}
+
+.timeslot button.ocupado {
+    background-color: #ffcccc;  /* vermelho claro */
+    color: #a00;
+    cursor: not-allowed;
+    border: 1px solid #a00;
+}
+
+.timeslot button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.timeslot button {
+    margin: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.timeslot button:hover:not(:disabled):not(.ocupado) {
+    background-color: #e0e0e0;
+}
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius: 50%;
+    background: #dfdddd;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 4px (0,0,0,0.2);
+}
+.days{
+    display: grid;
+    grid-template-columns:repeat(7,0.2fr);
+}
+.day{
+    text-align: center;
+    padding: 10px;
+    color:#999fa6;
+    font-weight: 500px;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:5px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+}
+.date:hover,
+
+.date.active{
+
+    background:#fff;
+    color: #000;
+
+}
+.date.inactive{
+    color: #d2d2d2;
+}
+.date.inactive:hover{
+    color: #fff;
+}
+.date.selected {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.selected {
+    background-color:#FFBD59;
+    color: white;
+    border-radius: 50%;
+}
+table{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 40px;
+    margin-right: 500px;
+}
+
+/* #pag5 input {
+    width: 290px;
+    height: 34px;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #d8d8d8;
+    color: #fff;
+    border-color: #808080;
+    
+} */
+td{
+    padding: 10px;
+    border: 1px solid blue;
+    width: 500px;
+    
+}
+form a{
+    text-decoration:underline;
+    color: #FFBD59;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: -79px;
+}
+
+/*  botão cadastro */
+
+/* .botao-hr{
+            margin-top: 100px;
+            width: 208px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        } */
+        .botao-hr:hover{
+            background-color: #fff;
+            color: black;
+        }
+       
+ .sair{
+            margin-top: 70px;
+            width: 208px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .sair:hover{
+            background-color: #fff;
+            color: black;
+        }
+        .saircalendario{
+            margin-top: -50px;
+            margin-left: 20px;
+            width: 108px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            float: left;
+        }
+        .saircalendario:hover{
+            background-color: #fff;
+            color: black;
+        }
+             /* body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: ;
+            height: 400px;
+        } */
+
+        
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            border-radius: 8px;
+            margin-bottom: 14px;
+        }
+        
+
+        .container {
+            max-width: 360px;
+            height: 267px;
+            margin-top: 115px;
+            margin-left: 511px;            
+            background:#FFBD59;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(246, 245, 245);
+        }
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        .timeslot {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .timeslot button {
+            padding: 10px 20px;
+            border: 2px solid rgb(166, 150, 150);
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            /* font-weight: 900; */
+        }
+
+        .timeslot button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .timeslot button.selected {
+            background-color: black;
+            color: white;
+            /* borde: 2px solid black; */
+        }
+        #selectedTime {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+        .botao-hrl{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+         .botao-hr{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .botao-hr:hover{
+            background-color: #fff;
+            color: black;
+        }
+       
+        .sair{
+            margin-top: 70px;
+            width: 148px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .sair:hover{
+            background-color: #fff;
+            color: black;
+        }
+
+        /* Select estilo corte de cabelo */
+        
+     
+        h3 {
+            text-align: center;
+            font-size: 36px;
+            font-optical-sizing: auto;
+            color: #FFBD59;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: -9px;
+        }
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+
+        .container-caixaestilo {
+            width: 360px;
+            height: 265px;
+            margin-top: -306px;
+            margin-left: 980px;
+            margin-bottom:300px;
+            background:#FFBD59;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(253, 253, 253);
+            border-radius: 8px;
+        }
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        header{
+            margin: 65px;
+            float: left;
+        }
+        .selected-date {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Portal */
+@media screen and (max-width: 768px){
+
+    .fullCalendar{
+    min-height: 100vh;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 200px;
+}
+      .calendar{
+    width: 360px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(223, 222, 222); 
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 200px; 
+    bottom: 190px;    
+    right: 1040px;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-transform:uppercase;
+    text-decoration:solid;
+    
+}
+.monthYear{
+    text-align: center;
+    font-weight: 900;
+    width: 260px;
+    font-size: 17px;
+    font-family: "Cinzel Decorative", serif;
+    color: #484848;
+}
+
+.timeslot button.ocupado {
+    background-color: #ffcccc;  /* vermelho claro */
+    color: #a00;
+    cursor: not-allowed;
+    border: 1px solid #a00;
+}
+
+.timeslot button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.timeslot button {
+    margin: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.timeslot button:hover:not(:disabled):not(.ocupado) {
+    background-color: #e0e0e0;
+}
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius: 50%;
+    background: #dfdddd;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 4px (0,0,0,0.2);
+}
+.days{
+    display: grid;
+    grid-template-columns:repeat(7,0.1fr);
+}
+.day{
+    text-align: center;
+    padding: 10px;
+    color:#999fa6;
+    font-weight: 500px; 
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:20px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+}
+.date:hover,
+
+.date.active{
+
+    background:#fff;
+    color: #000;
+
+}
+.date.inactive{
+    color: #d2d2d2;
+}
+.date.inactive:hover{
+    color: #fff;
+}
+.date.selected {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.selected {
+    background-color:#FFBD59;
+    color: white;
+    border-radius: 50%;
+}
+table{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 40px;
+    margin-right: 500px;
+}
+
+}
+
+
+

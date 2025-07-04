@@ -1,0 +1,279 @@
+*{margin:0; padding:0;}
+
+
+.container-login {  /* Css do formulario de login */
+    width: 450px;
+    height: 300px;
+    /* border: 1px solid black; */
+       
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+}
+form{
+   
+    
+    text-align: center;
+    padding: 0px;
+    
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#lognome{
+    width: 283px;
+    height: 42px;
+    margin: 1px;
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+#logtelefone{
+    width: 283px;
+    height: 42px;
+    margin: 1px;
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+#sen{
+    margin-left: -2px;
+    padding-left: 1px;
+    
+}
+#submit{
+    width: 291px;
+    height: 45px;
+    margin-left: 5px;
+}
+p{
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 20px;
+    
+}
+
+/* Css do formulario de cadastro */
+#container-cadastro{
+    width: 700px;
+    height: 500px;
+    /* border: 1px solid black; */
+    
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+}
+#cad{
+    
+    text-align: center;
+    padding: 150;
+    padding: 60px;
+    
+}
+
+
+#cadnome {
+    width: 401px;
+    height: 42px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin: auto;
+    margin-bottom: 1px;
+}
+
+#cadEmail {
+    width: 401px;
+    height: 42px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin: auto;
+}
+#cadsenha {
+    width: 401px;
+    height: 42px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin: auto;
+}
+#cadtelefone {
+    width: 401px;
+    height: 42px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin: auto;
+}
+
+#btncad{
+    width: 420px;
+    margin-left: 0px;
+    height: 45px;
+    
+}
+label{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 0px;
+    
+}
+/* Estilo de texto para o calendário */
+.fullCalendar{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.calendar{
+    width: 600px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #ff9;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.monthYear{
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+}
+
+
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px (0,0,0,0.2);
+}
+.days{
+    display: grid;
+    grid-template-columns:repeat(7,1fr);
+}
+.day{
+    text-align: center;
+    padding: 16px;
+    color:#999fa6;
+    font-weight: 500px;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:5px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+}
+.date:hover,
+.date.active{
+
+    background: #ff5869;
+    color: #fff;
+
+}
+.date.inactive{
+    color: #d2d2d2;
+}
+.date.inactive:hover{
+    color: #fff;
+}
+.date.selected {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.date.selected {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+table{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 40px;
+    margin-right: 500px;
+}
+
+/* #pag5 input {
+    width: 290px;
+    height: 34px;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #d8d8d8;
+    color: #fff;
+    border-color: #808080;
+    
+} */
+td{
+    padding: 10px;
+    border: 1px solid blue;
+    width: 500px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+

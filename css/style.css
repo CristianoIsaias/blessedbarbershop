@@ -1,0 +1,590 @@
+*{margin:0; padding:0;}
+
+body{
+    
+  background-image: url(../img/justo.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ou outro valor desejado */
+  background-position: center; /* Ou outra posição */
+  background-color: #000; /* Cor de fundo */
+   width: 100vw;
+  height: 100vh;
+ /* display: flex;
+  text-align: center;
+  align-items: center; */
+}
+
+/* Css do login */
+
+.container-login { 
+    
+    box-shadow: 0px 0px 10px rgba(201, 199, 199, 0.3);
+    background-color: #0c0c0ca6;
+    width: 600px;
+    height: 350px;   
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    display: flex;
+    position: absolute;
+    top: 160px; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    border-radius: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    display: flex;
+    text-align: center;
+    /* margin: 20px 0 40px 0; */
+    flex-direction: column;
+    width: 600px;
+    height: 495px;
+   padding: 0px 120px; 
+
+   
+   
+}
+form header{
+     text-align: center;
+    margin: 100px 0px 40px 0;
+    font-size: 40px;
+    color: #fff;
+}
+
+form header header{
+    font-size: 75px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 900;
+    font-variant: calc(2.0fr);  
+    margin: 20px;  
+    
+}
+
+#lognome{
+    width: 344px;
+    height: 42px;
+    margin: 1px;
+    margin-left: 5px;
+    padding-left: 17px;
+    font-size: 20px;
+   /* margin-top: -5px;  */
+   margin-bottom: 8px;
+   border-radius: 25px;
+   cursor: pointer;
+   
+}
+#logsenha{
+    width: 344px;
+    height: 42px;
+    margin: 1px;
+    margin-left: 5px;
+    padding-left: 17px;
+    font-size: 20px;
+   margin-bottom: 8px;
+   border-radius: 25px;
+   cursor: pointer;
+}
+label{
+    font-size: 20px;
+}
+
+.botao-login{
+    width: 361px;
+    height: 45px;
+    margin-left: 5px;    
+    color: #f0f0f0;
+    font-size: 24px;
+    background-color: #896f57c2;   
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.botao-login:hover{
+            background-color: #896f5700;
+            color: #fff;
+        }
+p{
+    text-align: left;
+    padding-left: 85px;
+    padding-top: 10px;
+    
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(116, 111, 111);
+    padding-left: 12px;
+    margin: 1px;
+    
+}
+
+/* Estilo de texto para o calendário */
+.fullCalendar{
+    min-height: 100vh;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 200px;
+}
+.calendar{
+    width: 360px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(223, 222, 222); 
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 200px; 
+    bottom: 190px;    
+    right: 1040px;
+}
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-transform:uppercase;
+    text-decoration:solid;
+    
+}
+.monthYear{
+    text-align: center;
+    font-weight: 900;
+    width: 260px;
+    font-size: 17px;
+    font-family: "Cinzel Decorative", serif;
+    color: #484848;
+}
+
+.timeslot button.ocupado {
+    background-color: #ffcccc;  /* vermelho claro */
+    color: #a00;
+    cursor: not-allowed;
+    border: 1px solid #a00;
+}
+
+.timeslot button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.timeslot button {
+    margin: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.timeslot button:hover:not(:disabled):not(.ocupado) {
+    background-color: #e0e0e0;
+}
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius: 50%;
+    background: #dfdddd;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 4px (0,0,0,0.2);
+}
+.days{
+    display: grid;
+    grid-template-columns:repeat(7,0.1fr);
+}
+.day{
+    text-align: center;
+    padding: 10px;
+    color:#999fa6;
+    font-weight: 500px;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:5px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+}
+.date:hover,
+
+.date.active{
+
+    background:#fff;
+    color: #000;
+
+}
+.date.inactive{
+    color: #d2d2d2;
+}
+.date.inactive:hover{
+    color: #fff;
+}
+.date.selected {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.selected {
+    background-color:#FFBD59;
+    color: white;
+    border-radius: 50%;
+}
+table{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 40px;
+    margin-right: 500px;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid blue;
+    width: 500px;
+    
+}
+form a{
+    text-decoration:underline;
+    color: #fff;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: -79px;
+}
+form a:hover{
+    color: #e9d4c1c2;
+}
+
+/*  botão cadastro */
+
+/* .botao-hr{
+            margin-top: 100px;
+            width: 208px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        } */
+        .botao-hr:hover{
+            background-color: #fff;
+            color: black;
+        }
+       
+ .sair{
+            margin-top: 70px;
+            width: 208px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .sair:hover{
+            background-color: #fff;
+            color: black;
+        }
+        .saircalendario{
+            margin-top: -50px;
+            margin-left: 20px;
+            width: 108px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            float: left;
+        }
+        .saircalendario:hover{
+            background-color: #fff;
+            color: black;
+        }
+             /* body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: ;
+            height: 400px;
+        } */
+
+        
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            border-radius: 8px;
+            margin-bottom: 14px;
+        }
+        
+
+        .container {
+            max-width: 360px;
+            height: 267px;
+            margin-top: 115px;
+            margin-left: 511px;            
+            background:#FFBD59;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(246, 245, 245);
+        }
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        .timeslot {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .timeslot button {
+            padding: 10px 20px;
+            border: 2px solid rgb(166, 150, 150);
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            /* font-weight: 900; */
+        }
+
+        .timeslot button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .timeslot button.selected {
+            background-color: black;
+            color: white;
+            /* borde: 2px solid black; */
+        }
+        #selectedTime {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+        /* .botao-hrl{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+         .botao-hr{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .botao-hr:hover{
+            background-color: #fff;
+            color: black;
+        }
+       
+        .sair{
+            margin-top: 70px;
+            width: 148px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .sair:hover{
+            background-color: #fff;
+            color: black;
+        }
+
+        /* Select estilo corte de cabelo */
+        
+     
+        h3 {
+            text-align: center;
+            font-size: 36px;
+            font-optical-sizing: auto;
+            color: #FFBD59;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: -9px;
+        }
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+
+        .container-caixaestilo {
+            width: 360px;
+            height: 265px;
+            margin-top: -306px;
+            margin-left: 980px;
+            margin-bottom:300px;
+            background:#FFBD59;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(253, 253, 253);
+            border-radius: 8px;
+        }
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        header{
+            margin: 65px;
+            float: left;
+        }
+        .selected-date {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px){
+
+.container-login { 
+    
+    box-shadow: 0px 0px 10px rgba(201, 199, 199, 0.3);
+    background-color: #0c0c0ca6;
+    width: 350px;
+    height: 300px;   
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    /* top: 120;  */
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/justo.png);
+    background-size: cover;  
+    text-shadow: rgb(3, 3, 3);
+}
+
+form{
+    display: flex;
+    text-align: center;
+    /* margin: 20px 0 40px 0; */
+    flex-direction: column;
+    /* width: 600px; */
+    height: 495px;
+   /* padding: 120px;  */
+   
+}
+form header{
+    font-size: 30px;
+    margin-top:140px;
+}
+
+#lognome{
+    width: 200px;
+    margin-top: -20px;
+}
+#logsenha{
+   width: 200px;   
+}
+.botao-login{
+    width:220px;
+    text-align: center;
+}
+p{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+}
+
+
+
+
+
+@media (max-height: 600px) {
+  .container {
+    font-size: 0.9rem;
+  }
+}

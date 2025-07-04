@@ -1,0 +1,107 @@
+*{margin: 0; padding: 0;}
+
+body{
+    background-image:url(../img/homem-em-um-salao-de-barbearia-fazendo-o-corte-de-cabelo-e-barba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ou outro valor desejado */
+    background-position: center; /* Ou outra posição */
+    background-color: #00000095; /* Cor de fundo */ 
+    width: 100vw;
+    height: 100vh;    
+}
+
+h2{
+  color: white;
+  margin-top: 0px;
+  font-size: 28px;
+  margin-left: 22px;
+}
+
+.box-sizing{
+  position: relative;
+  height: 200px;
+  color: #fff;
+  padding: 70px;
+  /* background-color: #000000b5; */
+
+}
+
+table{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 1350px;
+  font-size: 20px;
+}
+
+.botao-lista{
+  position: relative;
+  top: 0px;
+}
+
+.espelho-escuro{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.63);
+ 
+}
+.espelho-escuro a{
+  /* float: right; */
+  width: 100px;
+  height: 20px;
+  /* background-color: blue; */
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff; 
+  margin-left: 1370px;
+  margin-top: 400px;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+table{
+  position: absolute;
+  top: 265px;
+  left: 320px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 670px;
+  font-size: 11px;
+  /* transform: rotate(-90deg); */
+}
+
+h2{
+  color: white;
+  margin-top: 23px;
+  font-size: 28px;
+  margin-left: -40px;
+  /* transform: rotate(-90deg); */
+  width: 600px;
+}
+.espelho-escuro a{
+  /* float: right; */
+  width: 100px;
+  height: 20px;
+  /* background-color: blue; */
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff; 
+  margin-left: 370px;
+  margin-top: 400px;
+}
+
+}

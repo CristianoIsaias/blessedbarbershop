@@ -1,0 +1,172 @@
+*{margin: 0;padding: 0;}
+
+body{
+    
+  background-image: url(../img/homem-em-um-salao-de-barbearia-fazendo-o-corte-de-cabelo-e-barba.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ou outro valor desejado */
+  background-position: center; /* Ou outra posição */
+  background-color: #0000006b;
+  width: 100vw;
+  height: 100vh;
+    
+}
+.container-caixa{
+    position: relative;
+  height: 200px;
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+     
+}  
+   /* 
+    padding: 20px;
+    margin-top: 100px;
+     */
+
+nav ul li{
+    display:inline-block;
+    
+}
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+     color: #fff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight:bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 0px;    
+    left: 400px;
+    border-radius: 8px;  
+    font-weight: 900;
+    text-shadow: 1px 0px 0px #896F57;
+    /* -webkit-text-stroke-width: 1px; /* Largura da borda */
+    /* -webkit-text-stroke-color: white; Cor da borda */ */
+    
+}
+nav ul li a:hover{
+background-color: #896F57;
+border-radius: 18px;
+color: #F6F6F6;
+opacity: 0.5
+
+}
+.alinharmenu{
+  margin-top: 52px;
+  
+  float:left;
+}
+
+.espelho-escuro{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.63);
+ 
+}
+.container-caixa a{
+  /* float: right; */
+  width: 100px;
+  height: 20px;
+  /* background-color: blue; */ 
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff; 
+  margin-left: 390px;
+  margin-top: 400px;
+}
+
+@media screen and (max-width: 768px){
+
+  .container-caixa{
+   position: relative;
+   height: 200px;
+}
+ 
+h1{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+     
+}  
+   /* 
+    padding: 20px;
+    margin-top: 100px;
+     */
+
+nav ul li{
+    display:inline-block;
+    
+}
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 9px;
+     color: #fff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight:bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 0px;    
+    left: 0px;
+    border-radius: 8px;  
+    font-weight: 900;
+    text-shadow: 1px 0px 0px #896F57;
+    /* -webkit-text-stroke-width: 1px; /* Largura da borda */
+    /* -webkit-text-stroke-color: white; Cor da borda */ */
+    
+}
+nav ul li a:hover{
+background-color: #896F57;
+border-radius: 18px;
+color: #F6F6F6;
+opacity: 0.5
+
+}
+.alinharmenu{
+  margin-top: 52px;
+  
+  float:left;
+}
+
+.espelho-escuro{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.63);
+ 
+}
+.container-caixa a{
+  /* float: right; */
+  width: 100px;
+  height: 20px;
+  /* background-color: blue; */ 
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff; 
+  margin-left: 420px;
+  margin-top: 400px;
+}
+
+
+}

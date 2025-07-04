@@ -1,0 +1,293 @@
+*{margin: 0;padding: 0;}
+
+/* Css do formulario de cadastro */
+
+body{
+  background-image: url(../img/maquininha.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ou outro valor desejado */
+  background-position: center; /* Ou outra posição */
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+#container-cadastro{
+    width: 700px;
+    height: 500px;    
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+}
+#cad{
+    
+    text-align: center;
+    padding: 150;
+    padding: 60px;
+    
+}
+form{
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: #00000061;
+}
+
+
+#cadnome {
+    width: 401px;
+    height: 45px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-left:80px;
+    margin-top: 32px;
+     border-radius: 25px;
+     text-align: center;
+}
+
+#cadEmail {
+    width: 401px;
+    height: 45px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-left:80px;
+    margin-top: 15px;
+     border-radius: 25px;
+     text-align: center;
+}
+#cadsenha {
+    width: 401px;
+    height: 45px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+   margin-left:80px;
+    margin-top: 15px;
+     border-radius: 25px;
+     text-align: center;
+}
+#cadtelefone {
+    width: 401px;
+    height: 45px;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-left:80px;
+    margin-top: 15px;
+     border-radius: 25px;
+     text-align: center;
+}
+
+#btncad{
+    width: 418px;
+    height: 40px;
+    margin-left: 0px;
+    
+    
+}
+h5{
+    font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top:-50px;
+}
+#selectPages{
+    margin-top:32px;
+}
+label{
+    font-size: 25px;
+    /* text-transform: capitalize; */
+    margin-top: -20px;
+    
+}
+.botao-hr{
+    width: 205px;
+    height: 45px;
+    margin-top:10 px;    
+    color: #f0f0f0;
+    font-size: 24px;
+    background-color: #896f57c2;   
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.botao-hr:hover{
+            background-color: #896f5700;
+            color: #fff;
+        }
+
+.botao-sair{
+    width: 216px;
+    height: 45px;
+    margin-top: 16px;    
+    color: #f0f0f0;
+    font-size: 24px;
+    background-color: #896f57c2;   
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.botao-sair:hover{
+            background-color: #896f5700;
+            color: #fff;
+        }        
+
+h1{
+       
+    text-align: center;
+    margin-top: -31px;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 45px;   
+    font-optical-sizing: auto;
+    font-weight: 900;      
+    color: #fff;
+}        
+@media screen and (max-width: 768px){
+form{
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: #00000061;
+}
+
+
+#cadnome {
+    width: 330px;
+    height: 45px;
+    margin-left: 85px;
+    padding-left: 0px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    
+    margin-top: 8px;
+     border-radius: 25px;
+     text-align: center;
+}
+
+#cadEmail {
+    width: 330px;
+    height: 45px;
+    margin-top: 2px;
+    margin-left: 85px;
+    padding-left: 0px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-top: 8px;
+     border-radius: 25px;
+     text-align: center;
+}
+#cadsenha {
+    width: 330px;
+    height: 45px;
+    margin-top: 2px;
+    margin-left: 85px;
+    padding-left: 0px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;  
+    margin-top: 8px;
+     border-radius: 25px;
+     text-align: center;
+}
+#cadtelefone {
+    width: 330px;
+    height: 45px;
+    margin-top: 2px;
+    margin-left: 85px;
+    padding-left: 0px;
+    font-size: 20px;    
+    align-items: center;    
+    display: flex;
+    margin-top: 8px;
+     border-radius: 25px;
+     text-align: center;
+}
+
+#btncad{
+    width: 342px;
+    height: 40px;
+    margin-left: 0px;
+    
+    
+}
+.botao-hr{
+    width: 154px;
+    height: 45px;
+    margin-top:10px;    
+    color: #f0f0f0;
+    font-size: 24px;
+    background-color: #896f57c2;   
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    margin-left: -25px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.botao-hr:hover{
+            background-color: #896f5700;
+            color: #fff;
+        }
+
+.botao-sair{
+    width: 154px;
+    height: 45px;
+    margin-top: 16px;    
+    color: #f0f0f0;
+    font-size: 24px;
+    background-color: #896f57c2;   
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    margin-left: 13px;
+}
+.botao-sair:hover{
+            background-color: #896f5700;
+            color: #fff;
+        }        
+
+
+    
+
+
+
+
+
+}

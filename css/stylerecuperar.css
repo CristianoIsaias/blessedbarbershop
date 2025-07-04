@@ -1,0 +1,151 @@
+*{margin: 0;padding: 0; color: #fff;}
+
+body{
+ background-image: url(../img/barbeiro-tatuado-elegante-faz-corte-de-cabelo-para-um-homem-barbudo-preto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ou outro valor desejado */
+  background-position: center; /* Ou outra posição */
+  background-color: #000; /* Cor de fundo */
+  /* width: 100vw; */
+  height: 100vh;
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+form{
+    display: relative;
+}
+
+#container-form{
+     display: inline-block;
+    /*align-items: center;
+    text-align: center; */
+    width: 600px;
+    height: 350px;
+    /* position: relative;
+    right: 0;
+    left: 0; */
+    /* border-radius: 8px; */
+    /* border: 1px solid white; */
+    background-color: #0000008d;
+    margin-top: 164px;
+    border-radius: 30px;
+}
+
+form h6{
+font-size: 30px;
+color: #f4ede7c2;
+font-family: "Cinzel Decorative", serif;
+margin-top: 45px;
+
+}
+input{
+    width: 344px;
+     height: 45px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: block;
+    /* margin:1% 0% -4% 36%; */
+    border-radius: 25px;
+    margin-top: 83px;
+    text-align: center;
+    display: inline-block; 
+    color: #000;
+}
+.botao-rec{     
+            margin-top: 6px;
+            width: 365px;
+            height: 45px;
+            background-color: #896f57c2;
+            font-size:24px ;
+            color: #fff;
+            cursor: pointer;
+            text-transform:uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            border-radius: 25px;
+            display: inline-block;
+        } 
+.botao-rec:hover{
+            background-color: #ffffff1f;
+            color: #896f57c2;
+            
+        }
+
+        .form-senha{
+            margin-top: 105px;
+        }
+
+        @media screen and (max-width: 768px){
+            form{
+    display: relative;
+}
+
+#container-form{
+     display: inline-block;
+    /*align-items: center;
+    text-align: center; */
+    width: 300px;
+    height: 350px; 
+    /* position: relative;
+    right: 0;
+    left: 0; */
+    /* border-radius: 8px; */
+    /* border: 1px solid white; */
+    background-color: #0000008d;
+    margin-top: 164px;
+    border-radius: 30px;
+}
+
+form h6{
+font-size: 20px;
+color: #f4ede7c2;
+font-family: "Cinzel Decorative", serif;
+margin-top: 45px;
+
+}
+input{
+    width: 270px;
+     height: 45px;
+    padding-left: 15px;
+    font-size: 20px;    
+    align-items: center;    
+    display: block;
+    /* margin:1% 0% -4% 36%; */
+    border-radius: 25px;
+    margin-top: 83px;
+    text-align: center;
+    display: inline-block; 
+    color: #000;
+}
+.botao-rec{     
+            margin-top: 6px;
+            width: 285px;
+            height: 45px;
+            background-color: #896f57c2;
+            font-size:24px ;
+            color: #fff;
+            cursor: pointer;
+            text-transform:uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            border-radius: 25px;
+            display: inline-block;
+        } 
+.botao-rec:hover{
+            background-color: #ffffff1f;
+            color: #896f57c2;
+            
+        }
+
+        .form-senha{
+            margin-top: 105px;
+        }
+
+
+
+        }
+      
+

@@ -1,0 +1,334 @@
+*{margin: 0;padding: 0;}
+
+body{
+  background-color: black; 
+  background-image: url(../img/justo.png);;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ou outro valor desejado */
+  background-position: center; /* Ou outra posição */
+    width: 100vw;
+    height: 100vh;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(../img/justo.png); */
+    background-size: cover;  
+    text-shadow: rgb(3, 3, 3);
+}
+
+.btn1{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+.btn2{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+.btn3{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+.btn4{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+h1{
+    color: white;
+    float: left;
+}
+#botaoEntrar{
+    display: grid;
+    place-items: center;
+}
+
+.botao{
+     font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     background-color: white;
+    display: flexbox;
+    margin: 0 auto;
+}
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+
+label{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 50px;
+    
+}
+
+#marca{
+text-shadow: 6px 6px 8px #000;
+
+}
+#marca img{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: #000 1px solid;
+    text-shadow: 6px 6px 8px #666;
+    background-color: #000000ce;
+}
+ h6 { 
+      position: absolute;
+    top: 274px;
+    bottom: 0;
+    left: 400px;
+    right: 0;
+      font-family: "Cinzel Decorative", serif;
+      font-size: 50px;
+      color: white;
+      text-decoration: underline;
+      font-weight: 900;
+      animation: fadeIn 2s ease-out, blink 8s infinite;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #b87333, 0 0 30px #b87333;
+      opacity: 0;
+    }
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+} .scissors {
+      width: 60px;
+      height: 60px;
+      margin-top: 20px;
+      animation: cut 2s infinite;
+    }
+
+   @keyframes fadeIn {
+      0% { opacity: 0; color:#b87333; }  /* cor inicial diferente */
+      100% { opacity: 1; color: white; }  /* transição para branco */
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+
+/* ------------------------------------------------------------ */
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav ul li{
+    display:inline-block;
+    
+}
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+     color: #fff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight:bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 30px;    
+    left: 1210px;
+    border-radius: 8px;  
+    font-weight: 900;
+    text-shadow: 1px 0px 0px #896F57;}
+    /* -webkit-text-stroke-width: 1px; /* Largura da borda */
+    /* -webkit-text-stroke-color: white; Cor da borda */ */
+    
+
+nav ul li a:hover{
+background-color: #896F57;
+border-radius: 18px;
+color: #F6F6F6;
+opacity: 0.5
+
+}
+
+.menu{
+    top: 350px;
+}
+/* ----------------------------------Parte Responsiva-------------------------------------------------------- */
+@media screen and (max-width: 768px){
+
+    body{
+  background-color: black; 
+  background-image: url(../img/justo.png);;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ou outro valor desejado */
+  background-position: center; /* Ou outra posição */
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+}
+
+  #alinharmenu{
+    margin-top:1px;
+  }  
+
+  
+#container{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(../img/justo.png); */
+    background-size: cover;  
+    text-shadow: rgb(3, 3, 3);
+}
+
+.btn1{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+.btn2{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+.btn3{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+.btn4{
+    width: 300px;
+    height: 60px;
+    border: 1px solid black;
+}
+h1{
+    color: white;
+    float: left;
+}
+#botaoEntrar{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.botao{
+     font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     background-color: white;
+    display: flexbox;
+    margin: 0 auto;
+}
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+
+label{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 50px;
+    
+}
+#marca{
+    font-family: "Cinzel Decorative", serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h6 { 
+      position: absolute;
+    top: 274px;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+      font-family: "Cinzel Decorative", serif;
+      font-size: 30px;
+      color: white;
+      text-decoration: underline;
+      font-weight: 900;
+      animation: fadeIn 2s ease-out, blink 8s infinite;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #b87333, 0 0 30px #b87333;
+      opacity: 0;
+    }
+
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+} .scissors {
+      width: 60px;
+      height: 60px;
+      margin-top: 20px;
+      animation: cut 2s infinite;
+    }
+
+   @keyframes fadeIn {
+      0% { opacity: 0; color:#b87333; }  /* cor inicial diferente */
+      100% { opacity: 1; color: white; }  /* transição para branco */
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+
+/* ------------------------------------------------------------ */
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav ul li{
+    display:inline-block;
+    
+}
+nav ul li a{
+    padding: 10px 70px;
+    text-decoration: none; 
+    font-size: 16px;
+     color: #fff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight:bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 400px;    
+    left: 80px;
+    right: 0;
+    border-radius: 8px;  
+    font-weight: 900;
+    text-shadow: 1px 0px 0px #896F57;
+    /* -webkit-text-stroke-width: 1px; /* Largura da borda */
+    /* -webkit-text-stroke-color: white; Cor da borda */ */
+    
+}
+nav ul li a:hover{
+background-color: #896F57;
+border-radius: 14px;
+color: #F6F6F6;
+opacity: 0.5
+
+}
+
+.menu{
+    top: 50px;
+}
+
+
+    
+
+}

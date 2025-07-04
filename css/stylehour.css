@@ -1,0 +1,812 @@
+*{margin: 0;padding: 0;font-size:20px;}
+
+body{
+    background-color: white;
+    color: rgb(42, 168, 61);
+    background-image: url(../img/justo.png);
+     background-repeat: no-repeat;
+    background-size: cover; /* Ou outro valor desejado */
+    background-position: center; Ou outra posição */  
+    width: ;
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    text-align: center;
+    align-items: center;
+} 
+
+
+
+  /* Select estilo corte de cabelo */
+        h2{
+            margin-top: 80px;
+            width: 700px;
+            align-items: center;
+            font-family: Cinzel Decorative, serif;
+        }
+        
+     
+        h3 {
+            text-align: center;
+            font-size: 36px;
+            font-optical-sizing: auto;
+            color: #FFBD59;
+            font-family: "Cinzel Decorative", serif;
+            
+            font-weight: 700;
+            font-style: normal;
+            margin-top: 0px;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: -9px;
+        }
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+        /* É a parte de estilização da opção */
+        .container-caixaestilo {
+            width: 575px;
+            height: 430px;
+            margin-right: auto;            
+            margin-left: 80px;           
+            background:#00000097;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(253, 253, 253);
+            border-radius: 15px;
+        }
+        h5{
+    font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top:-50px;
+}
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        header{
+            margin: 65px;
+            float: left;
+        }
+        .selected-date {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+}
+.botao-hrl{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: #896f57c2;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+         .botao-hr{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: #896f57c2;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: "Cinzel Decorative", serif;
+            border-radius: 18px;
+        }
+        .botao-hr:hover{
+            background-color: #fff;
+            color: black;
+        }
+       
+        .sair{
+            margin-top: 70px;
+            width: 148px;
+            height: 40px;
+            background-color: #896f57c2;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: "Cinzel Decorative", serif;
+            border-radius: 18px;
+        }
+        .sair:hover{
+            background-color: #fff;
+            color: black;
+        }
+        option{
+            font-family: Decorative", serif;
+            
+        }
+
+        /* Select estilo corte de cabelo */
+        
+     
+       
+
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-optical-sizing: auto;
+            color: #fff;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: -9px;
+        }
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            font-size: 25px;
+            background-color: hsla(209, 75.6%, 8%, 0.06);
+            color:#bd9191;
+            font-family: "Cinzel Decorative", serif;
+        }
+
+        /* Estilização do calendario do sistema */
+
+        /* Estilo de texto para o calendário */
+/* .fullCalendar{
+    min-height: 100vh;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 200px;
+} */
+ #calendarSection{
+    margin-left: auto;
+    margin-right: auto;
+ }
+.calendar{
+    width: 575px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #000000a1;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(223, 222, 222); 
+    /* margin: auto; */
+     align-items: center;
+    justify-content: center;
+    /* position: absolute;  */ */
+  
+}
+#penteadoSection{
+    margin-left: auto;
+                margin-right: auto;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-transform:uppercase;
+    text-decoration:solid;
+    
+}
+.monthYear{
+    text-align: center;
+    font-weight: 900;
+    width: 260px;
+    font-size: 20px;
+    font-family: "Cinzel Decorative", serif;
+    color: #fff;
+}
+
+.timeslot button.ocupado {
+    background-color: #ffcccc;  /* vermelho claro */
+    color: #a00;
+    cursor: not-allowed;
+    border: 1px solid #a00;
+}
+
+.timeslot button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.timeslot button {
+    margin: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.timeslot button:hover:not(:disabled):not(.ocupado) {
+    background-color: #e0e0e0;
+}
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius: 50%;
+    background: #dfdddd;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 4px (0,0,0,0.2);
+}
+.days{
+    display: grid;
+    grid-template-columns:repeat(7,1.2fr);
+    font-size: 20px;
+}
+.day{
+    text-align: center;
+    padding: 10px;
+    color:#999fa6;
+    font-weight: 500px;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:31px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+}
+.date:hover,
+
+.date.active{
+
+    background:#fff;
+    color: #000;
+
+}
+.date.inactive{
+    color: #d2d2d2;
+}
+.date.inactive:hover{
+    color: #fff;
+}
+.date.selected {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.selected {
+    background-color:#FFBD59;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Estilizar o horario */
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            border-radius: 26px;
+            margin-bottom: 14px;
+            padding-left: 20px;
+            margin-top: -15px;
+        }
+        
+
+        .container {
+            width: 575px;
+            height: 430px;           
+            margin-left: 475px;
+            background:#00000097;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(246, 245, 245);
+        }
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        .timeslot {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .timeslot button {
+            padding: 10px 20px;
+            border: 2px solid rgb(166, 150, 150);
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            /* font-weight: 900; */
+        }
+
+        .timeslot button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .timeslot button.selected {
+            background-color: black;
+            color: white;
+            /* borde: 2px solid black; */
+        }
+        #selectedTime {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #alinhacontainer{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0  0 5px;
+            /* width: 1000px; */
+        }
+
+        @media screen and (max-width: 768px){
+
+            
+  /* Select estilo corte de cabelo */
+        h2{
+            margin-top: 80px;
+            width: 700px;
+            align-items: center;
+            font-family: Cinzel Decorative, serif;
+        }
+        
+     
+        h3 {
+            text-align: center;
+            font-size: 36px;
+            font-optical-sizing: auto;
+            color: #FFBD59;
+            font-family: "Cinzel Decorative", serif;
+            
+            font-weight: 700;
+            font-style: normal;
+            margin-top: 0px;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: -9px;
+        }
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+        /* É a parte de estilização da opção */
+        .container-caixaestilo {
+            width: 408px;
+            height: 356px;
+            margin-right: 0px;            
+            margin-left: 0px;           
+            background:#00000097;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(253, 253, 253);
+            border-radius: 15px;
+        }
+        h5{
+    font-size: 25px;
+            font-optical-sizing: auto;
+            color: #484848;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top:-50px;
+}
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        header{
+            margin: 65px;
+            float: left;
+        }
+        .selected-date {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+}
+.botao-hrl{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: #896f57c2;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+         .botao-hr{
+            margin-top: 90px;
+            width: 148px;
+            height: 40px;
+            background-color: #896f57c2;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: "Cinzel Decorative", serif;
+            border-radius: 18px;
+        }
+        .botao-hr:hover{
+            background-color: #fff;
+            color: black;
+        }
+       
+        .sair{
+            margin-top: 70px;
+            width: 148px;
+            height: 40px;
+            background-color: #896f57c2;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: "Cinzel Decorative", serif;
+            border-radius: 18px;
+        }
+        .sair:hover{
+            background-color: #fff;
+            color: black;
+        }
+        option{
+            font-family: Decorative", serif;
+            
+        }
+
+        /* Select estilo corte de cabelo */
+        
+     
+       
+
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-optical-sizing: auto;
+            color: #fff;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: -9px;
+        }
+
+        
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            font-size: 25px;
+            background-color: hsla(209, 75.6%, 8%, 0.06);
+            color:#bd9191;
+            font-family: "Cinzel Decorative", serif;
+        }
+
+        /* Estilização do calendario do sistema */
+
+        /* Estilo de texto para o calendário */
+/* .fullCalendar{
+    min-height: 100vh;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 200px;
+} */
+ #calendarSection{
+    margin-left: auto;
+    margin-right: auto;
+ }
+.calendar{
+    width: 575px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #000000a1;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(223, 222, 222); 
+    /* margin: auto; */
+     align-items: center;
+    justify-content: center;
+    /* position: absolute;  */ */
+  
+}
+#penteadoSection{
+    margin-left: auto;
+                margin-right: auto;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-transform:uppercase;
+    text-decoration:solid;
+    
+}
+.monthYear{
+    text-align: center;
+    font-weight: 900;
+    width: 260px;
+    font-size: 20px;
+    font-family: "Cinzel Decorative", serif;
+    color: #fff;
+}
+
+.timeslot button.ocupado {
+    background-color: #ffcccc;  /* vermelho claro */
+    color: #a00;
+    cursor: not-allowed;
+    border: 1px solid #a00;
+}
+
+.timeslot button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.timeslot button {
+    margin: 4px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.timeslot button:hover:not(:disabled):not(.ocupado) {
+    background-color: #e0e0e0;
+}
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius: 50%;
+    background: #dfdddd;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 4px (0,0,0,0.2);
+}
+.days{
+    display: grid;
+    grid-template-columns:repeat(7,1.2fr);
+    font-size: 20px;
+}
+.day{
+    text-align: center;
+    padding: 10px;
+    color:#999fa6;
+    font-weight: 500px;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:20px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+}
+.date:hover,
+
+.date.active{
+
+    background:#fff;
+    color: #000;
+
+}
+.date.inactive{
+    color: #d2d2d2;
+}
+.date.inactive:hover{
+    color: #fff;
+}
+.date.selected {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.selected {
+    background-color:#FFBD59;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Estilizar o horario */
+
+        #servicos label {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        #servicos {
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        select {
+            border-radius: 26px;
+            margin-bottom: 14px;
+            padding-left: 20px;
+            margin-top: -15px;
+        }
+        
+
+        .container {
+            width: 485px;
+            height: 330px;           
+            margin-left: 100px;
+            background:#00000097;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(246, 245, 245);
+        }
+
+        .container p {
+            margin-left: -75px;
+        }
+
+        .timeslot {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .timeslot button {
+            padding: 10px 20px;
+            border: 2px solid rgb(166, 150, 150);
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            /* font-weight: 900; */
+        }
+
+        .timeslot button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .timeslot button.selected {
+            background-color: black;
+            color: white;
+            /* borde: 2px solid black; */
+        }
+        #selectedTime {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #alinhacontainer{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0  0 5px;
+            /* width: 1000px; */
+        }
+
+
+        }
