@@ -1,22 +1,42 @@
-# Ignorar configurações locais do VSCode
+# ----------------------------------------
+# CONFIGURAÇÕES DE EDITOR (EX: VS CODE)
+# ----------------------------------------
 .vscode/
 
-# Ignorar dependências PHP (Composer)
+# ----------------------------------------
+# DEPENDÊNCIAS PHP (Composer)
+# ----------------------------------------
 vendor/
 
-# Arquivos temporários e de backup
+# ----------------------------------------
+# SISTEMAS OPERACIONAIS (Windows/Mac)
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------
+# ARQUIVOS TEMPORÁRIOS E BACKUPS
+# ----------------------------------------
 *.log
 *.tmp
 *.bak
 *.swp
 
-# Arquivos do sistema operacional
-.DS_Store
-Thumbs.db
+# ----------------------------------------
+# ARQUIVOS DE CONFIGURAÇÃO PESSOAL
+# ----------------------------------------
+.env
 
-# Arquivos compactados
+# ----------------------------------------
+# ARQUIVOS COMPACTADOS
+# ----------------------------------------
 *.zip
 *.rar
+*.7z
 
-# Arquivos de ambiente
-.env
+# ----------------------------------------
+# OPCIONAL: IGNORAR IMAGENS PESADAS ESPECÍFICAS
+# ----------------------------------------
+# img/banner-grande.png
+# img/*.psd
+# img/*.tiff
