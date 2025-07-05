@@ -1,0 +1,22 @@
+# Ignorar configurações locais do VSCode
+.vscode/
+
+# Ignorar dependências PHP (Composer)
+vendor/
+
+# Arquivos temporários e de backup
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos compactados
+*.zip
+*.rar
+
+# Arquivos de ambiente
+.env
