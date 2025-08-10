@@ -6,6 +6,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     $telefone = $_POST['telefone'];
+    $telefone = $_POST['tipo_usuario'];
 
     // Verifica se o email já existe
     $sql = "SELECT * FROM cadastro WHERE email = ?";
@@ -30,14 +31,14 @@ if (isset($_POST['submit'])) {
         $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
         // Cadastro com prepared statement
-        $sql = "INSERT INTO cadastro (nome, email, senha, telefone) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO cadastro (nome, email, senha, telefone,tipo_usuario) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conexao->prepare($sql);
 
         if (!$stmt) {
             die("Erro no prepare do INSERT: " . $conexao->error);
         }
 
-        $stmt->bind_param("ssss", $nome, $email, $senha_hash, $telefone);
+        $stmt->bind_param("sssss", $nome, $email, $senha_hash, $telefone,$tipo_usuario);
 
         if ($stmt->execute()) {
             echo "<script>
@@ -60,34 +61,40 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cadastro_adm.css">
-     <!-- <link rel="stylesheet" href="css/template.css"> -->
+    <!-- <link rel="stylesheet" href="css/template.css"> -->
     <title>Cadastro</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
 
-  
+
     <div id="container-cadastro">
-      
-      <form action="cadastro_adm.php" method="POST" id="cad">
-        <h1>Faça o seu cadastro</h1>        
-        <input type="text" name="nome" id="cadnome"placeholder ="Nome Completo" />
-        <input type="email" name="email" id="cadEmail" placeholder ="E-mail" />
-        <input type="password" name="senha" id="cadsenha"  placeholder ="Password" />
-        <input type="tel" id="cadtelefone" name="telefone" id="" placeholder="Telefone" />
-        
-        <input type="submit" value="salvar" name="submit" class="botao-hr">
-        <input type="button" value="sair" class="botao-sair" onclick="window.location.href='sair_adm.php'">
 
-       
+        <form action="cadastro_adm.php" method="POST" id="cad">
+            <h1>Faça o seu cadastro</h1>
+            <input type="text" name="nome" id="cadnome" placeholder="Nome Completo" />
+            <input type="email" name="email" id="cadEmail" placeholder="E-mail" />
+            <input type="password" name="senha" id="cadsenha" placeholder="Password" />
+            <input type="tel" id="cadtelefone" name="telefone" id="" placeholder="Telefone" />
+            <select name="tipo_usuario" required id="tipo_usuario">
+                <option value="admin">admin</option>
+                <option value="cliente" selected>cliente</option>
+            </select>
+            <input type="submit" value="salvar" name="submit" class="botao-hr">
+            <input type="button" value="sair" class="botao-sair" onclick="window.location.href='sair_adm.php'">
 
-    </form>
+
+
+        </form>
     </div>
 
     <script src="js/scripts.js"></script>
-  </body>
+</body>
+
 </html>

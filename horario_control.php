@@ -95,7 +95,7 @@ if (isset($_POST['submit'])) {
                     <option value="Barba Completa">Barba Completa</option>
                     <option value="Combo Corte + Barba">Combo Corte + Barba</option>
                     <option value="Design de Sobrancelha">Quimica em Geral</options                                      
-</select>
+                </select>
                 <br><br>
                 <input type="submit" value="Salvar" name="submit" class="botao-hr">
                 <input type="button" value="Sair" onclick="window.location.href='sair.php'" class="sair">
@@ -157,18 +157,34 @@ function mostrarEtapa(etapa) {
     document.getElementById('timeSection').classList.toggle('hidden', etapa !== 1);
     document.getElementById('penteadoSection').classList.toggle('hidden', etapa !== 2);
 }
+    // horário definido pelo js
+const horariosDesativados = []; // Armazena horários desativados manualmente
 
 function renderizarHorarios(horariosOcupados = []) {
+    
+
     timeslotDiv.innerHTML = "";
-    const horarios = [ "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "00:00"];
+
+    const horarios = [ "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "00:00" ];
+
     horarios.forEach(horario => {
         const button = document.createElement('button');
         button.textContent = horario;
         button.type = "button";
+
+        // Ocupado pelo banco de dados
         if (horariosOcupados.includes(horario)) {
             button.disabled = true;
             button.classList.add("ocupado");
         }
+
+        // Desativado manualmente
+        if (horariosDesativados.includes(horario)) {
+            button.disabled = true;
+            button.classList.add("desativado");
+        }
+
+        // Clique esquerdo → selecionar horário
         button.addEventListener('click', () => {
             if (!button.disabled) {
                 document.querySelectorAll('.timeslot button').forEach(btn => btn.classList.remove('selected'));
@@ -177,10 +193,31 @@ function renderizarHorarios(horariosOcupados = []) {
                 mostrarEtapa(2);
             }
         });
+
+        // Clique direito → ativar/desativar
+        button.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+
+            if (!horariosOcupados.includes(horario)) {
+                const index = horariosDesativados.indexOf(horario);
+
+                if (index === -1) {
+                    horariosDesativados.push(horario);
+                } else {
+                    horariosDesativados.splice(index, 1);
+                }
+
+                // Re-renderiza para aplicar mudança visual
+                renderizarHorarios(horariosOcupados);
+            }
+        });
+
         timeslotDiv.appendChild(button);
     });
+    
 }
 
+// ---------------------------------------------------------------------------------
 datesElement.addEventListener('click', (event) => {
     const target = event.target;
     if (target.classList.contains('date') && !target.classList.contains('inactive')) {

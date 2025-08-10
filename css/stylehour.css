@@ -466,6 +466,39 @@ body{
         }
 
         /* É a parte de estilização da opção */
+        .date {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.date.inactive {
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+button.ocupado {
+    background-color: red;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+button.desativado {
+    background-color: #666;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+
         .container-caixaestilo {
             width: 408px;
             height: 356px;

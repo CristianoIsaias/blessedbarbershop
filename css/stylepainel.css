@@ -11,24 +11,45 @@ body{
   height: 100vh;
     
 }
-.container-caixa{
-    position: relative;
-  height: 200px;
+.titulo{
+  display: block;
+align-content: center;
+justify-items: center;
+ height: 200px; 
+ 
 }
+.titulo h1 {
+text-align: center;
+font-size: 36px;
+color: #fff;
+}
+.entrar{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  text-align: center;
+  /* height: 200px; */
+  /* float: right; */
+  
+}
+.entrar a{
+  border-radius: 15px;
+  font-size: 25px;
+  background-color: #896f5743;
+  color:#fff;
+  width: 100px;
+  height: 35px;
+}
+ 
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px 20px;
+}   
 
-h1{
-    color: white;
-    font-size: 25px;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-     
-}  
-   /* 
-    padding: 20px;
-    margin-top: 100px;
-     */
 
 nav ul li{
     display:inline-block;
@@ -38,19 +59,14 @@ nav ul li a{
     padding: 10px 20px;
     text-decoration: none;
     font-size: 16px;
-     color: #fff;
+    color: #fff;
     border-radius: 8px;
     text-transform: uppercase;
     font-weight:bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    top: 0px;    
-    left: 400px;
     border-radius: 8px;  
     font-weight: 900;
     text-shadow: 1px 0px 0px #896F57;
-    /* -webkit-text-stroke-width: 1px; /* Largura da borda */
-    /* -webkit-text-stroke-color: white; Cor da borda */ */
+   
     
 }
 nav ul li a:hover{
@@ -60,11 +76,16 @@ color: #F6F6F6;
 opacity: 0.5
 
 }
-.alinharmenu{
-  margin-top: 52px;
-  
-  float:left;
+
+.ocupado {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
+.selected {
+  background-color: yellow;
+  color: white;
+}
+
 
 .espelho-escuro{
   width: 100vw;
@@ -72,27 +93,30 @@ opacity: 0.5
   background-color: rgba(0, 0, 0, 0.63);
  
 }
-.container-caixa a{
-  /* float: right; */
-  width: 100px;
-  height: 20px;
-  /* background-color: blue; */ 
+.container-caixa{
+  /* width: 100px; */
+  height: 100px;
   text-align: center;
-  padding: 15px;
-  margin-top: 5px;
+  padding: 15px;  
   cursor: pointer;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+}
+.container-caixa a{   
   border-radius: 25px;
   text-decoration: none;
   font-size: 20px;
   color: #fff; 
-  margin-left: 390px;
-  margin-top: 400px;
+  
 }
 
 @media screen and (max-width: 768px){
 
   .container-caixa{
-   position: relative;
+   display: flex;
+   align-content: center;
+   justify-items: center;
    height: 200px;
 }
  
@@ -152,7 +176,7 @@ opacity: 0.5
   background-color: rgba(0, 0, 0, 0.63);
  
 }
-.container-caixa a{
+container-caixa a{
   /* float: right; */
   width: 100px;
   height: 20px;

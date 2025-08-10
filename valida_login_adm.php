@@ -24,6 +24,7 @@ if (
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['telefone'] = $usuario['telefone'];
             $_SESSION['codigo_id'] = $usuario['codigo_id'];
+            $_SESSION['tipo_usuario'] = $usuario['tipo_usuario'];
 
             header('Location: paineldecontrole.php');
             exit();
